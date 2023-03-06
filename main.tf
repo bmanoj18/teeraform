@@ -1,4 +1,4 @@
-resource "google_compute_instance" "instance-2" {
+resource "google_compute_instance" "default" {
   name         = "instance-2"
   machine_type = "e2-medium"
   zone         = "us-central1-a"
@@ -6,6 +6,8 @@ resource "google_compute_instance" "instance-2" {
   boot_disk {
     initialize_params {
       image = "centos-7-v20230203"
+      size = "20"
+      type = "pd-ssd"
     }
   }
 
