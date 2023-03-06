@@ -4,7 +4,7 @@ pipeline{
      stages{
         stage('Git Checkout'){
             steps{
-                git credentialsId: 'git credentials id', url: 'https://github.com/bmanoj18/teeraform.git'
+                checkout scm
             }
         }
         
