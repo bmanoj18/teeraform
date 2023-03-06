@@ -1,0 +1,29 @@
+
+
+My Project is to launch instances on AWS using terraform script, the script is running well in local, i want to automate the process through jenkins and i put the code in git, below is the pipeline script i used in jenkins
+
+pipeline{
+    agent any
+    tools {
+        terraform 'terraform'
+    }
+     stages{
+        stage('Git Checkout'){
+            steps{
+                git credentialsId: 'git credentials id', url: 'https://gitlab.com/ndey1/kafka-infra'
+            }
+        }
+        
+        stage('Terraform init'){
+            steps{
+                sh 'terraform init'
+            }
+        }
+        
+        stage('Terraform apply'){
+            steps{
+                sh 'terraform apply --auto approve'
+            }
+        }
+    }
+    }
