@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "fourth-arena-379102",
+  "private_key_id": "fb7e5a8702d2180905e680ea0814ddee9bef4282",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCdEF+BBmX7JQ45\nxxfcumHR5r5IIsFfaoiW1KyBQOFoBKNb07ybfOAFvCEEssEDlW5XB/4ZBIhUf+X2\n7DT0dCsBW4qwwbJLGIx6b8mbTj7zEk4MolsC31+Jn9fKvwD9nqvcm2v5w7rMo15L\nmDFdYQgBuV4orqwTM+xLJqo+GwWBUjHgTDihasDJAJscdI8KbEUUsE6abK5c94vI\nfPCTUMzrGlRz3Ray9YU30iq8OuicTU3mbgleBgsSNy2yVt6D24m0+QE7Ft0ZH1mg\nlKG2NhozcvE1kswPAT0GIHqxKO3HhysP28VzM9uakl6rOARuTL1aaLVzNRjr2AKb\norfwkWpJAgMBAAECggEABhBdA5P96XeZiEEHypGWl75HH+1Zlme8TMh6vYXF/hhZ\nv0CaQk2Mr6P/CVmmao9BIpKQLKKYadzDQeiGNd7rTyLb5K2hxtT0jYCV4c1gUE2n\nXkUBawe5PkzBzdXYgbI30+1bOpokMuTmzdfbJg4KO1jPChaOVbJ2P8OHJJ0x9fdp\nJyBiXT+cVb7n3HIwfEt4KrQnmLrNbpLlVDZE2IwSP6NsxvXJkzleZoXvjf2ld0pJ\ncrhEB3fpZ69NnRg/lEEmo3lKvjNBU1pquE8X7bwLjEGgkYwhubIu0LmbxqYYJvrZ\nAjLUtF65WKacNDAL3BeSTqkeSyrCxPNDMEPc5ieSlQKBgQDYHpKMDuUTHBsKTUpU\nBQVzJw4bBQGWeLpkSHAGW8rFXu/MZ+YM6sK1czL7chxkkXM566zQZ2G5kiqEEhFy\niCaqU9R4RyfPmvYv40Zt+c7WBYxv5JbVB3dVJx16A3seKNigR6NsxBQEVPYgumnK\nW8cCXhgpNQ7VSyd0OaDiqjShVQKBgQC6DAj/MbmMQFYJefHOgv2Z4njD0kkoZU5W\ntoyK06VqJbvApBOEAE5ekDQ76yuyxEgOqsdrbSzeLOMgAxVSCAbV9R6LLfVSr6Ly\nK87smfshpdoUB2JG0u/DaBZaN991NjfDTzRvh4vs4rck5RG0z1LF9wklzHkVPhc1\n03H+wVG1JQKBgQCwAa39rH+44XHQIQQAixpWHp9pN9mELww1cZzyQL1RojCO+qqr\nKGGsHoaNqvAeoyoBKMNT8m3vEG/ZoVFeQi2jF6R41BJDDAOlGmYYWJKvUFOAKN0B\n3xO7YKCr5rvU4xUQ62bXxJQ8tui/3LEdYUMg1Xq9zH0pDgyypeA12MIGBQKBgAjW\nU4MTsJWZ5LxUf4jorfUmTcg3b+QsU7lIuIpLnVraaf2vjYHCpfZV8TU7aXr3Wdjg\ngdJ3gB8ZkLxPiS65VOHK3+WKjFGeKCZKsGyKr+QcRayX4TIuCNeGVTF53/JoXeO4\nGmyFyr640iw9eUbWZj8jCdsyyDmbFm0nGw4XzrLFAoGBALR17LQSTQGCF/lo07XS\nZOfk5hu0euVQiOL8+VLBpbs+oMdsixmnfnzQF+Xc5J5vNk+eNwCo13B1TkyfNlTZ\nS+HHblxbFA7TV9wZRzoRuleSKb3dzkeVSlFi9aFGUPDbPpiJINvXrivojjD5Fk51\nwm6WJAcpAzRVnGONmJLDg0IZ\n-----END PRIVATE KEY-----\n",
+  "client_email": "terraform-testing@fourth-arena-379102.iam.gserviceaccount.com",
+  "client_id": "116198870750749598904",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform-testing%40fourth-arena-379102.iam.gserviceaccount.com"
+}
