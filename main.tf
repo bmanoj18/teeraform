@@ -1,35 +1,42 @@
+# Create a single Compute Engine instance
 resource "google_compute_instance" "default" {
-  name         = "instance-2"
-  machine_type = "e2-medium"
+  name         = "test-vm"
+  machine_type = "f1-micro"
   zone         = "us-central1-a"
+  tags         = ["ssh"]
 
+  metadata = {
+    enable-oslogin = "TRUE"
+  }
   boot_disk {
     initialize_params {
-      image = "centos-7-v20230203"
-      size = "20"
-      type = "pd-ssd"
+      image = "debian-cloud/debian-9"
+      size  = "100"
+      type  = "pd-ssd"      
     }
   }
 
-  // Local SSD disk
-  scratch_disk {
-    interface = "SCSI"
-  }
-
+  # Install Flask
+  metadata_startup_script = "sudo apt-get update; sudo apt-get install -yq build-essential python-pip rsync; pip install flask"
+ 
   network_interface {
     network = "default"
 
     access_config {
-      // Ephemeral public IP
+       network_tier = "PREMIUM"
+      # Include this section to give the VM an external IP address
     }
   }
-  
+}
+# [START vpc_flask_quickstart_5000_fw]
+resource "google_compute_firewall" "http-server" {
+  name    = "http-server-firewall"
+  network = "default"
 
-  metadata_startup_script = "echo hi > /test.txt"
-
-  service_account {
-    # Google recommends custom service accounts that have cloud-platform scope and permissions granted via IAM Roles.
-    email  = 148225735457-compute@developer.gserviceaccount.com
-    scopes = ["cloud-platform"]
+  allow {
+    protocol = "tcp"
+    ports    = ["80"]
   }
+  source_ranges = ["0.0.0.0/0"]
+  target_tags = ["http-server"]
 }
