@@ -1,4 +1,4 @@
 provider "google" {
-credentials = "${file("Creditinals.json")}"
+credentials = "${file("creditinals.json")}"
 project = My First Project
 }
