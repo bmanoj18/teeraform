@@ -1,1 +1,4 @@
 
+variable filename {
+  type: string
+  
