@@ -10,7 +10,7 @@ resource "google_compute_instance" "default" {
   }
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-9"
+      image = "centos-7-v20230203"
       size  = "100"
       type  = "pd-ssd"      
     }
