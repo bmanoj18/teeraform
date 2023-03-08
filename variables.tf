@@ -2,10 +2,6 @@ variable "project" {
   default = "fourth-arena-379102"
 }
 
-variable "credentials" {
-  default = "credentials.json"
-}
-
 variable "name" {
   default = "test-vm"
 }
