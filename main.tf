@@ -1,8 +1,8 @@
 # Create a single Compute Engine instance
 resource "google_compute_instance" "default" {
-  name         = "test-vm"
-  machine_type = "f1-micro"
-  zone         = "us-central1-a"
+  name         = "${var.name}"
+  machine_type = "${var.machine_type}"
+  zone         = "${var.zone}"
   tags         = ["ssh"]
 
   metadata = {
@@ -10,7 +10,7 @@ resource "google_compute_instance" "default" {
   }
   boot_disk {
     initialize_params {
-      image = "centos-7-v20230203"
+      image = "${var.image}"
       size  = "100"
       type  = "pd-ssd"      
     }
@@ -27,16 +27,4 @@ resource "google_compute_instance" "default" {
       # Include this section to give the VM an external IP address
     }
   }
-}
-# [START vpc_flask_quickstart_5000_fw]
-resource "google_compute_firewall" "http-server" {
-  name    = "http-server-firewall"
-  network = "default"
-
-  allow {
-    protocol = "tcp"
-    ports    = ["80"]
-  }
-  source_ranges = ["0.0.0.0/0"]
-  target_tags = ["http-server"]
 }
