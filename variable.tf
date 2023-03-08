@@ -10,5 +10,5 @@ variable "zone" {
 }
   
 variable "image" {
-  default = "us-central1-a"
+  default = "centos-7-v20230203"
 }
