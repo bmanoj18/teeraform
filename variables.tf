@@ -1,5 +1,7 @@
-variable "fourth-arena-379102" {}
-variable "credentials.json" {}
+variable "fourth-arena-379102" {
+}
+variable "credentials.json" {
+}
 
 variable "name" {
   default = "test-vm"
