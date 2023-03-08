@@ -6,7 +6,6 @@ variable "name" {
 }
 
 variable "region" {
-  type = string
   default = "us-central1"
 }
   
