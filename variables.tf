@@ -11,7 +11,10 @@ variable "region" {
 variable "zone" {
   default = "us-central1-a"
 }
-  
+
+variable "machine_type" {
+  default = "f1-micro"
+}
 variable "image" {
   default = "centos-7-v20230203"
 }
