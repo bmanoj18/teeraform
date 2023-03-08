@@ -1,5 +1,5 @@
-variable "project" {}
-variable "credentials_file" {}
+variable "fourth-arena-379102" {}
+variable "credentials.json" {}
 
 variable "region" {
   default = "us-central1"
