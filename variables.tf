@@ -2,13 +2,16 @@ variable "fourth-arena-379102" {}
 variable "credentials.json" {}
 
 variable "name" {
+  type    = string
   default = "test-vm"
 }
 variable "region" {
+  type    = string
   default = "us-central1"
 }
   
 variable "zone" {
+  type    = string
   default = "us-central1-a"
 }
 
