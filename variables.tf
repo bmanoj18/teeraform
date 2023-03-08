@@ -1,6 +1,9 @@
 variable "fourth-arena-379102" {}
 variable "credentials.json" {}
 
+variable "name" {
+  default = "test-vm"
+}
 variable "region" {
   default = "us-central1"
 }
